@@ -1,0 +1,25 @@
+{
+    "name": "test-web",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "latest",
+        "angular-ui-router": "latest",
+        "moment": "latest",
+        "lodash": "latest",
+        "d3": "latest",
+        "bootstrap": "latest",
+        "numeral": "latest",
+        "angular-numeraljs": "latest",
+        "angular-flash": "latest",
+        "bower-debug": "latest"
+    },
+    "devDependencies": {},
+    "exportsOverride": {
+        "lodash": {
+            ".": "**/lodash.js"
+        },
+        "minilog": {
+            ".": "**/*.js"
+        }
+    }
+}

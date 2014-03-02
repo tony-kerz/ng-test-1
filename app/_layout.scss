@@ -1,0 +1,21 @@
+.bg-in {
+  color: $white;
+  background-color: $in;
+  fill: $in;
+}
+.bg-out-offered {
+  color: $white;
+  background-color: $out-offered;
+  fill: $out-offered;
+}
+.bg-out-not-offered {
+  color: $white;
+  background-color: $out-not-offered;
+  fill: $out-not-offered;
+}
+.bg-light-grey {
+  background-color: $light-grey;
+}
+.inline-block {
+  display: inline-block;
+}

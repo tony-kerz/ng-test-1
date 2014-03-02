@@ -1,0 +1,22 @@
+doctype html
+meta(charset='utf-8')
+html(ng-app='test')
+  head
+    - if(ENV.NODE_ENV == 'development')
+      script(src="//localhost:35729/livereload.js")
+    - for src in VENDOR_SRC
+      script(type='text/javascript', src=src)
+    - for src in JS_SRC()
+      script(type='text/javascript', src=src)
+    - for src in VENDOR_CSS_SRC()
+      link(rel='stylesheet', href=src)
+    - for src in CSS_SRC()
+      link(rel='stylesheet', href=src)
+  body
+    .header.navbar.navbar-default.navbar-static-top.col-xs-12(role='navigation')
+      h1#header-logo Test Web
+    .container
+      .fade(flash-alert, active-class="in alert")
+        strong.alert-heading {{flash.type}}
+        span.alert-message {{flash.message}}
+    div(ui-view)

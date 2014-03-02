@@ -1,0 +1,11 @@
+*.sw*
+*~
+build/
+bin/
+node_modules/
+selenium/
+mock-api/public/
+bower_components/
+.sass-cache/
+.DS_Store
+specs/
