@@ -1,5 +1,26 @@
 @import '_variables';
 @import '_layout';
 @import 'header/_header';
+@import 'shared/tree-map-directive/_tree-map-directive';
+@import 'shared/simple-directive/_simple-directive';
 @import 'tree-map-1/_tree-map-1';
+@import 'simple-1/_simple-1';
+
+html, body { height: 100%; width: 100%; margin: 0; }
+// fixed top
+body {
+  padding-top: 70px;
+
+  div.container {
+    height: 100%;
+    width: 100%;
+
+    div.view {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
 

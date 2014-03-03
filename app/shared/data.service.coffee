@@ -1,6 +1,6 @@
 app.service 'dataService', ($http) ->
   index: ->
-    @index ?= $http.get('/api/data').then indexSuccess, indexFailure
+    @index ?= $http.get('/api/data').then dataSuccess, dataFailure
 
   dataSet1: ->
     @dataSet1 ?=
@@ -31,10 +31,13 @@ app.service 'dataService', ($http) ->
         ]
       ]
 
-indexSuccess = (resolution) ->
+  dataSet2: ->
+    @dataSet2 ?= $http.get('/api/data').then dataSuccess, dataFailure
+
+dataSuccess = (resolution) ->
   resolution.data
 
-indexFailure = (rejection) ->
+dataFailure = (rejection) ->
   console.log "rejection: #{rejection}"
   rejection
 

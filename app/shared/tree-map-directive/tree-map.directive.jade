@@ -1,9 +1,6 @@
-h3 tree map directive template
-h5 width: {{ vis.width }}, height: {{ vis.height }}
-svg(
-  ng-attr-width='{{ vis.width }}'
-  ng-attr-height='{{ vis.height }}'
-)
+h5 tree-map-directive template (width: {{ vis.width }}, height: {{ vis.height }})
+// viewBox='x y w h'
+svg(ng-attr-viewBox='{{ vis.x }} {{ vis.y }} {{ vis.width }} {{ vis.height }}')
   g.tree-map-group(ng-repeat='node in vis.nodes')
     g.cell(transform='translate({{ node.x }}, {{ node.y }})')
       rect(ng-attr-width='{{ node.dx }}', ng-attr-height='{{ node.dy }}', ng-style='rectStyle(node)')

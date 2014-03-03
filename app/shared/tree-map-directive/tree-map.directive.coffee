@@ -8,11 +8,14 @@ app.directive name, ($window) ->
   controller: 'treeMapDirectiveCtrl'
 
   link: (scope, el, $attrs) ->
-    dbg 'link: scope=%o, el=%o, $attrs=%o', scope, el, $attrs
+    dbg 'link: scope=%o, el=%o, el-parent=%o, $attrs=%o', scope, el, el.parent(), $attrs
 
     scope.vis =
       height: height(el)
       width: width(el)
+      x: 0
+      y: 0
+      padding: 3
 
     scope.$watch 'data', dataListener
 
@@ -24,10 +27,10 @@ app.directive name, ($window) ->
       scope.$apply()
 
 height = (el) ->
-  el.parent().prop('offsetHeight')
+  el.prop('offsetHeight')
 
 width = (el) ->
-  el.parent().prop('offsetWidth')
+  el.prop('offsetWidth')
 
 sizeListener = (el, scope) ->
   h = height(el)
@@ -35,8 +38,8 @@ sizeListener = (el, scope) ->
   vis = scope.vis
   unless (vis.height is h) and (vis.width is w)
     dbg "size-listener: height: #{vis.height} -> #{h}, width: #{vis.width} -> #{w}"
-    scope.vis.height = h
-    scope.vis.width = w
+    vis.height = h
+    vis.width = w
     calculateLayout scope
 
 dataListener = (data, oldData, scope) ->
@@ -45,7 +48,7 @@ dataListener = (data, oldData, scope) ->
 
 calculateLayout = (scope) ->
   vis = scope.vis
-  vis.nodes = d3.layout.treemap().size([vis.width, vis.height]).nodes(scope.data)
+  vis.nodes = d3.layout.treemap().size([vis.width, vis.height]).padding(vis.padding).nodes(scope.data)
   dbg 'calculate-layout: vis=%o', vis
 
 rectStyle = (node) ->

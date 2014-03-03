@@ -1,4 +1,4 @@
 app.config ($stateProvider, $urlRouterProvider) ->
-  $urlRouterProvider.otherwise("/tree-map-1")
+  $urlRouterProvider.otherwise("/home")
 
 

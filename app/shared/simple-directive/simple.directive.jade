@@ -1,0 +1,11 @@
+h3 simple directive template
+h5 width: {{ vis.width }}, height: {{ vis.height }}
+// viewBox='x y w h'
+svg(ng-attr-viewBox='{{ vis.x }} {{ vis.y }} {{ vis.width }} {{ vis.height }}')
+  g.group(transform='translate({{ vis.x }}, {{ vis.y }})')
+    rect(width='100%', height='100%')
+  //rect(ng-attr-width='{{ vis.width }}', ng-attr-height='{{ vis.height }}')
+
+
+
+
