@@ -1,0 +1,187 @@
+[
+  {
+    "date": "201303",
+    "in": {
+      "paid_dollars": 541489,
+      "count": 8864
+    },
+    "out_offered": {
+      "paid_dollars": 861138,
+      "count": 10345
+    },
+    "out_not_offered": {
+      "paid_dollars": 881707,
+      "count": 10482
+    },
+    "procedure_categories": [
+      {
+        "id": 123,
+        "name": "Orthopedics",
+        "in": {
+          "paid_dollars": 541489,
+          "count": 8864
+        },
+        "out_offered": {
+          "paid_dollars": 861138,
+          "count": 10345
+        },
+        "out_not_offered": {
+          "paid_dollars": 881707,
+          "count": 10482
+        }
+      },
+      {
+        "id": 124,
+        "name": "Dermatology",
+        "in": {
+          "paid_dollars": 541489,
+          "count": 8864
+        },
+        "out_offered": {
+          "paid_dollars": 861138,
+          "count": 10345
+        },
+        "out_not_offered": {
+          "paid_dollars": 881707,
+          "count": 10482
+        }
+      },
+      {
+        "id": 124,
+        "name": "Cardiology",
+        "in": {
+          "paid_dollars": 541489,
+          "count": 8864
+        },
+        "out_offered": {
+          "paid_dollars": 861138,
+          "count": 10345
+        },
+        "out_not_offered": {
+          "paid_dollars": 881707,
+          "count": 10482
+        }
+      }
+    ]
+  },
+  {
+    "date": "201304",
+    "in": {
+      "paid_dollars": 591510,
+      "count": 8292
+    },
+    "out_offered": {
+      "paid_dollars": 1044753,
+      "count": 11347
+    },
+    "out_not_offered": {
+      "paid_dollars": 1056157,
+      "count": 11167
+    }
+  },
+  {
+    "date": "201305",
+    "in": {
+      "paid_dollars": 586180,
+      "count": 8687
+    },
+    "out_offered": {
+      "paid_dollars": 1157740,
+      "count": 12133
+    },
+    "out_not_offered": {
+      "paid_dollars": 1823614,
+      "count": 12157
+    }
+  },
+  {
+    "date": "201306",
+    "in": {
+      "paid_dollars": 522589,
+      "count": 7091
+    },
+    "out_offered": {
+      "paid_dollars": 849312,
+      "count": 8530
+    },
+    "out_not_offered": {
+      "paid_dollars": 938680,
+      "count": 8513
+    }
+  },
+  {
+    "date": "201307",
+    "in": {
+      "paid_dollars": 592212,
+      "count": 7317
+    },
+    "out_offered": {
+      "paid_dollars": 736590,
+      "count": 8646
+    },
+    "out_not_offered": {
+      "paid_dollars": 769403,
+      "count": 8688
+    }
+  },
+  {
+    "date": "201308",
+    "in": {
+      "paid_dollars": 504661,
+      "count": 6385
+    },
+    "out_offered": {
+      "paid_dollars": 647426,
+      "count": 8002
+    },
+    "out_not_offered": {
+      "paid_dollars": 606110,
+      "count": 8018
+    }
+  },
+  {
+    "date": "201309",
+    "in": {
+      "paid_dollars": 365156,
+      "count": 6238
+    },
+    "out_offered": {
+      "paid_dollars": 551349,
+      "count": 6599
+    },
+    "out_not_offered": {
+      "paid_dollars": 488991,
+      "count": 6755
+    }
+  },
+  {
+    "date": "201310",
+    "in": {
+      "paid_dollars": 362418,
+      "count": 7086
+    },
+    "out_offered": {
+      "paid_dollars": 614373,
+      "count": 7311
+    },
+    "out_not_offered": {
+      "paid_dollars": 711950,
+      "count": 7166
+    }
+  },
+  {
+    "date": "201311",
+    "in": {
+      "paid_dollars": 439766,
+      "count": 6144
+    },
+    "out_offered": {
+      "paid_dollars": 690775,
+      "count": 5855
+    },
+    "out_not_offered": {
+      "paid_dollars": 570829,
+      "count": 5674
+    }
+  }
+]

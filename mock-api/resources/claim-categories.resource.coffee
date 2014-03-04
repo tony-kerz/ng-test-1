@@ -2,10 +2,10 @@ _        = require 'lodash'
 moment   = require 'moment'
 Resource = require './resource'
 
-class Data extends Resource
+class ClaimCategory extends Resource
   id: new (require './resource/id')
 
-  root: '/api/claims/'
+  root: '/api/claims/categories'
 
   collection: []
 
@@ -45,10 +45,11 @@ class Data extends Resource
 
   constructor: ->
     @collection = _.times 6, (index) =>
-      @generate(date: "2013#{month(index)}")
+      procedure_categories = @generate
+      @generate(date: "2013#{month(index)}", procedure_categories: procedure_categories)
     @collection = @collection.concat _.times 6, (index) =>
       @generate(date: "2014#{month(index)}")
 
-module.exports = Data
+module.exports = ClaimCategory
 
 month = (index) -> if ++index < 10 then '0' + index else index

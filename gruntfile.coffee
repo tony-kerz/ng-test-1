@@ -30,6 +30,8 @@ module.exports = (grunt) ->
         cwd: settings.cwd
         dest: settings.dest
         expand: true
+        options:
+          sourceMap: true
         #ext: '.js'
         rename: (dest, src) ->
           "#{dest}/#{src.replace(/\.coffee$/, '.js')}"
